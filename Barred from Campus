@@ -1,0 +1,37 @@
+/* Purpose: This script is to review who ever has been Barred from Campus 
+- Find out their Contact preferences and set them to No 
+- We want to make sure we don't contact this person 
+
+	SOURCE TABLES:
+		elcn_businessrelationship
+		elcn_contactpreference
+
+	HISTORY:
+		10/22/2021	Dikshya	Pandey created
+		CRM last updated: 11/8/2021
+*/
+
+SELECT 
+br.elcn_PersonId
+,cp.elcn_contactpreferenceId
+,br.elcn_PersonIdName
+,br.elcn_OrganizationIdName
+,br.elcn_BusinessRelationshipStatusIdName
+,cp.elcn_ContactPreferenceTypeIdName
+
+,CASE WHEN cp.au_appointment = 1 THEN 0 ELSE 0 END au_appointment
+,CASE WHEN cp.au_Email  = 1 THEN 0 ELSE 0 END au_Email
+,CASE WHEN cp.au_letter = 1 THEN 0 ELSE 0 END au_letter
+,CASE WHEN cp.au_phone = 1 THEN 0 ELSE 0 END au_phone
+,CASE WHEN cp.au_text = 1 THEN 0 ELSE 0 END au_text
+--into #temptable
+FROM elcn_businessrelationship br
+LEFT JOIN elcn_contactpreference cp on cp.elcn_PersonId = br.elcn_PersonId
+WHERE elcn_OrganizationIdName like '%Barred From Campus%'
+AND br.statecode = 0 and br.statuscode = 1
+AND elcn_businessRelationshipStatusIdName='Current'
+
+-- DROP TABLE IF EXISTS #temptable
+
+--Distinct Name of the people barred from campus
+--select distinct #temptable.elcn_PersonIdName from #temptable
