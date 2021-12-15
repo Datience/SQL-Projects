@@ -15,7 +15,7 @@ If Person1 has no spouse and no set prefix -> 	"First Name"
 
 
 This script consists of 2 different table
- 1. First table: This table consists of information regarding Person1 and spouse (like: Prefix, person1 first name and last name and spouse first name and last name)
+ 1. First table: This table consists of information regarding Person1 and spouse (like: Prefix, person1 first name and last name and spouse first name and last    name)
  2. Second Table: This table consists of the new formatted name without the education flag*
  3. Third Table: This table consists of the new formatted name with the education flag*
 
