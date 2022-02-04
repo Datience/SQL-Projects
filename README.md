@@ -4,6 +4,6 @@ Being a data quality analyst requires me to regualry write SQL codes in order to
 
 ### 📚 Table of Contents: 
 
-1. [Barred From Campus](Barred%20From%20Campus/Read.md#barred-from-campus)
+1. Barred From Campus
 2. Formatted Names 
  
