@@ -4,15 +4,15 @@ This script was written to create a new joint formatted name of Person1 and thei
 
 ### Formula: 
 
-If Person1 has no spouse, but has a set prefix in the dataset -> "Prefix" + "Last Name"
+1. If Person1 has no spouse, but has a set prefix in the dataset -> "Prefix" + "Last Name"
 
-If Person1 has spouse, both have set prefixes and have the same last name in the dataset -> "Prefix" & (Spouse) "Prefix" + (Spouse) "Last Name"
+2. If Person1 has spouse, both have set prefixes and have the same last name in the dataset -> "Prefix" & (Spouse) "Prefix" + (Spouse) "Last Name"
 
-If Person1 has spouse, both have set prefixes but have different last name in the dataset -> "Prefix" + "Last Name" & (Spouse) "Prefix" + (Spouse) "Last Name"
+3. If Person1 has spouse, both have set prefixes but have different last name in the dataset -> "Prefix" + "Last Name" & (Spouse) "Prefix" + (Spouse) "Last Name"
 
-If Person1 has spouse, but only 1 or none have set prefix in the dataset -> "First Name" & (Spouse) "First Name"
+4. If Person1 has spouse, but only 1 or none have set prefix in the dataset -> "First Name" & (Spouse) "First Name"
 
-If Person1 has no spouse and no set prefix -> "First Name"
+5. If Person1 has no spouse and no set prefix -> "First Name"
 
 This script consists of 2 different table
 
