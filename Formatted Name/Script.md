@@ -1,3 +1,4 @@
+```sql
 /* 
 Purpose: This script is to create a new joint formatted name of Person1 (alumni) and spouse using formula's provided
 This script consists of 2 different table
@@ -128,3 +129,4 @@ from #newtb ft
 LEFT JOIN education ed on ft.ContactId = ed.PersonId AND ed.InstitutionIdName = '**** University' AND ed.graduationstatusIdName = 'Completed' AND ed.statecode = 0 AND ed.statuscode = 1
 LEFT JOIN education ed2 on ft.spouseID = ed2.PersonId AND ed2.InstitutionIdName = '**** University' AND ed2.graduationstatusIdName = 'Completed' AND ed2.statecode = 0 AND ed2.statuscode = 1
 ;
+```
