@@ -1,10 +1,10 @@
 # Formatted Name
 
-This script was written to create a new joint formatted name of Person1 and their spouse using the formulas provided:
+This script was written to create a new joint formatted name of Alumni's and their spouse using the formulas provided below. Then, update the CRM. The reason behind creating new joint formatted name was to ensure that all the alumni's and their spouse have correct names in the mail they receive. 
 
 ### Formula: 
 
-1. If Person1 has no spouse, but has a set prefix in the dataset -> "Prefix" + "Last Name"
+1. If Person1 has no spouse, but has a set prefix in the dataset -> ##"Prefix"## + "Last Name"
 
 2. If Person1 has spouse, both have set prefixes and have the same last name in the dataset -> "Prefix" & (Spouse) "Prefix" + (Spouse) "Last Name"
 
