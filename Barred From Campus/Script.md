@@ -1,3 +1,4 @@
+```sql
 /* Purpose: This script is to review who ever has been Barred from Campus 
 - Find out their Contact preferences and set them to No 
 - We want to make sure we don't contact this person 
@@ -35,3 +36,4 @@ AND businessRelationshipStatusIdName='Current'
 
 --Distinct Name of the people barred from campus
 --select distinct #temptable.PersonIdName from #temptable
+```
