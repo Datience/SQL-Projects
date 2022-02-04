@@ -4,7 +4,7 @@ This script was written to create a new joint formatted name of Alumni's and the
 
 ### Formula: 
 
-1. If Person1 has no spouse, but has a set prefix in the dataset -> ##"Prefix"## + "Last Name"
+1. If Person1 has no spouse, but has a set prefix in the dataset -> "Prefix" + "Last Name"
 
 2. If Person1 has spouse, both have set prefixes and have the same last name in the dataset -> "Prefix" & (Spouse) "Prefix" + (Spouse) "Last Name"
 
