@@ -127,6 +127,12 @@ SELECT DISTINCT ft.*
 from #newtb ft
 
 LEFT JOIN education ed on ft.ContactId = ed.PersonId AND ed.InstitutionIdName = '**** University' AND ed.graduationstatusIdName = 'Completed' AND ed.statecode = 0 AND ed.statuscode = 1
-LEFT JOIN education ed2 on ft.spouseID = ed2.PersonId AND ed2.InstitutionIdName = '**** University' AND ed2.graduationstatusIdName = 'Completed' AND ed2.statecode = 0 AND ed2.statuscode = 1
-;
+LEFT JOIN education ed2 on ft.spouseID = ed2.PersonId AND ed2.InstitutionIdName = '**** University' AND ed2.graduationstatusIdName = 'Completed' AND ed2.statecode = 0 AND ed2.statuscode = 1;
+
+--the query below populates only the records that need to be updated.
+
+SELECT *
+FROM #finaltable f
+WHERE f.elcn_formattedname != f.FINAL_formattedname;
+
 ```
