@@ -133,6 +133,6 @@ LEFT JOIN education ed2 on ft.spouseID = ed2.PersonId AND ed2.InstitutionIdName 
 
 SELECT *
 FROM #finaltable f
-WHERE f.elcn_formattedname != f.FINAL_formattedname;
+WHERE f.formattedname != f.FINAL_formattedname;
 
 ```
