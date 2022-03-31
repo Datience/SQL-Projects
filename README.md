@@ -6,4 +6,4 @@ Being a data quality analyst requires me to regualry write SQL codes in order to
 
 1. Barred From Campus
 2. Formatted Names 
- 
+3. General overview of SQL 
