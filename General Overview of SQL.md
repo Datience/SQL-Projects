@@ -29,7 +29,14 @@ SELECT * FROM table1
 LIMIT 10; 
 ```
 
-*SORTING*:
+*SORTING*: Very intuitive when it comes with SQL, why do we want to sort? 
 
+Lets get the first 5 values in column1 from table1 by alphabetical order:
+```sql
+SELECT column1
+FROM table1
+ORDER BY column1  #sort by using ORDER BY, default to alphabetical order. Or you can use ASC argument for ascending, and DESC for descending. Order by is always after the FROM
+LIMIT 5; 
+```
 
 
