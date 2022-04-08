@@ -1,7 +1,7 @@
 ```sql
 /* 
 Purpose: This script is to create a new joint formatted name of Person1 (alumni) and spouse using formula's provided
-This script consists of 2 different table
+This script consists of 3 different table
  1. First table: This table consists of information regarding Person1 and spouse (like: Prefix, person1 first name and last name and spouse first name and last name)
  2. Second Table: This table consists of the new formatted name without the education flag
  3. Third Table: This table consists of the new formatted name with the education flag
