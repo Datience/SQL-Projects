@@ -14,7 +14,7 @@ This script was written to create a new joint formatted name of Alumni's and the
 
 5. If Person1 has no spouse and no set prefix -> "First Name"
 
-This script consists of 2 different table
+This script consists of 3 different table
 
 - First table: This table consists of information regarding Person1 and spouse (like: Prefix, person1 first name and last name and spouse first name and last name)
 
